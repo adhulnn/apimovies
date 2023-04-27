@@ -177,5 +177,5 @@ class MovieApiMV(ModelViewSet):
             dser=ReviewSerializer(review,many=True)
             return Response(dser.data)
         except:
-            return Response({"msg":"invalid id"},status=status.HTTP_400_BAD_REQUEST)
+            return Response({"msg":"invalid"},status=status.HTTP_400_BAD_REQUEST)
     
